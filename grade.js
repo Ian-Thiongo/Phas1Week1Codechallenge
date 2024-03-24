@@ -27,10 +27,3 @@ let grade = calculateGrade(inputMark);
 
 console.log(calculateGrade(28));
 
-
-
-
-
-
-
-

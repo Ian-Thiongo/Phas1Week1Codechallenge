@@ -1,3 +1,4 @@
+//function that calculated the net salary
 function calculateNetSalary(basicSalary, benefits) {
     // Calculate gross salary (basic salary + benefits)
     const grossSalary = basicSalary + benefits;
@@ -5,7 +6,7 @@ function calculateNetSalary(basicSalary, benefits) {
     // Calculate PAYE (Tax)
     let taxablePay = grossSalary - getPersonalRelief();
     let payee = 0;
-  
+  //else if statement
     if (taxablePay <= 24000) {
       payee = taxablePay * 0.1;
     } else if (taxablePay <= 32333) {

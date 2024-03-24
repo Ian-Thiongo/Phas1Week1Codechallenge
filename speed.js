@@ -1,3 +1,4 @@
+//function to calculate the demerit points a driver gets based on the speed of the car
 function showDemeritPoints() {
     let speed = document.getElementById('speed').value;
     let result = calculateDemeritPoints(speed);
@@ -8,9 +9,9 @@ function calculateDemeritPoints(speed) {
     const speedLimit = 70;
 
     // Get the speed value from the input field
-    speed = parseFloat(speed);  // Convert the string value to a number
+    speed = parseFloat(speed);  // Converting the string value to a number
 
-    if (!isNaN(speed) && speed >= 0) {  // Validate input (non-negative number)
+    if (!isNaN(speed) && speed >= 0) {  
         if (speed <= speedLimit) {
             return "Ok";
         } else {
