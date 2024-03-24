@@ -1,0 +1,64 @@
+Ian's (Grade Calculator,Speed detector and net salary calculator program)
+
+
+#Salary Calculator
+
+This JavaScript code calculates an employee's net salary based on their basic salary, benefits, and various deductions applicable in Kenya (as of March 24, 2024).
+
+Features:
+
+Calculates PAYE (tax) based on taxable income (gross salary minus personal relief) with progressive tax brackets.
+Determines NHIF deduction based on gross salary using a lookup table.
+Calculates NSSF deduction considering tier limits and contribution rates.
+Accounts for Housing Levy (combined employer and employee contribution).
+Returns a detailed breakdown of salary components, including gross salary, PAYE, NHIF, NSSF, Housing Levy, and net salary.
+Code Structure:
+
+The code consists of three main functions:
+
+calculateNetSalary(basicSalary, benefits): Takes basic salary and benefits as input, calculates all deductions and net salary, and returns an object containing the breakdown.
+getPersonalRelief(): Returns the annual personal relief amount converted to a monthly value.
+getNHIFDeduction(grossSalary): Determines the NHIF deduction based on the provided gross salary using a lookup table.
+getNSSFDeduction(grossSalary): Calculates the NSSF deduction considering tier limits and contribution rates for the current month.
+Example Usage:
+
+JavaScript
+const basicSalary = 50000;
+const benefits = 5000;
+
+const salaryBreakdown = calculateNetSalary(basicSalary, benefits);
+
+console.log(salaryBreakdown);
+Use code with caution.
+This code snippet defines basicSalary and benefits, calculates the net salary breakdown using calculateNetSalary, and then prints the result to the console. The output will be an object containing details like gross salary, PAYE, NHIF, NSSF, Housing Levy, and net salary.
+
+Additional Notes:
+
+The NHIF deduction lookup table might need to be updated periodically to reflect any changes in NHIF rates or salary tiers.
+This code provides a simplified representation of Kenyan salary calculations and may not capture all nuances of the actual tax and deduction rules.
+Bonus Code Snippets
+
+#Grade calculator
+This progaram receives the numerical marks that a student got and prints out the grade that the student has gotten in his/her exams.
+
+#Features
+Takes a student's mark as input (between 0 and 100).
+Uses a switch statement to determine the corresponding letter grade according to standard grading scales.
+Incorporates input validation to ensure the entered mark is within a valid range.
+Returns an appropriate error message if the input is invalid. 
+
+
+##speed detector
+This JavaScript code calculates the demerit points associated with a given speeding violation.
+
+#Features:
+
+1.Retrieves the speed value from an HTML element with the ID "speed".
+2.Defines a speed limit of 70 (can be adjusted as needed).
+3.Validates user input to ensure it's a non-negative number.
+4.Calculates demerit points based on the formula: points = floor((speed - speedLimit) / 5).
+5.Provides informative feedback:
+6."Ok" for speeds at or below the limit.
+7."Points: [number]" for exceeding the limit but not enough to suspend the license.
+8."License suspended" for exceeding the limit by a significant amount.
+9.Handles invalid input (non-numeric or negative values).

@@ -1,0 +1,22 @@
+{
+  "name": "phas1week1codechallenge",
+  "version": "1.0.0",
+  "description": "P1W1codechallenge",
+  "main": "grade-calculator.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lilThiosh/Phas1Week1Codechallenge.git"
+  },
+  "keywords": [
+    "Javascript"
+  ],
+  "author": "Ian",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lilThiosh/Phas1Week1Codechallenge/issues"
+  },
+  "homepage": "https://github.com/lilThiosh/Phas1Week1Codechallenge#readme"
+}
