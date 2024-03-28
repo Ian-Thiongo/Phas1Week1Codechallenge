@@ -106,4 +106,4 @@ function calculateNetSalary(basicSalary, benefits) {
   
   const salaryBreakdown = calculateNetSalary(basicSalary, benefits)
   
-  console.log(getNSSFDeduction(50000));
+  console.log(salaryBreakdown);
